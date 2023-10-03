@@ -26,7 +26,7 @@ reduceColors(image, colors, maxColors)
 - image - dvourozměrná matice s obrázkem
 - color - matice s hodnoty a počtem výskytů všech barev
 - maxColor - počet barev na který chceme barvy redukovat
-- vrací dvourozměrnou matici s pixely obrázku, které mají 2 barvy.
+- vrací dvourozměrnou matici s pixely obrázku, který má 2 barvy (bílou a černou)
 
 Funkce nejprve redukuje všechny barvy na počet určený maxColors. Následně vezme dvě nejčastější. Předpokládá se, že pozadí je vždy světlejší. Tímto určíme barvu pozadí a tvaru. Následně všechny pixely, které mají barvu pozadí změníme na bílé a zbytek na černé. Tímto docílíme obrázku, který má pouze dvě barvy.
 Bohužel se tímto většinou prokopíruje i kousek stínu.
@@ -39,3 +39,4 @@ deleteShadow(image, deleteConst)
 
 Jelikož se při redukování barev většinou prokopíruje kousek stínu, tak ho odstraníme pomocí zmenšení tělese kolem celého obvodu.
 U obrázků 64x64 se prokázala efektivní hodnota 3.
+___
