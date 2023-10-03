@@ -6,7 +6,7 @@
 - [x] bod za splnění
 - [x] bod za výhru
 
-[###Další bonusová úloha](https://github.com/SmejkyJ/matlab-speech-cut)
+[Další bonusová úloha](https://github.com/SmejkyJ/matlab-speech-cut)
 
 ## Popis
 *Program nejdříve spočítá všechny barvy v obrázku. Následně vezme ty nejčastější a podobné (méně časté) barvy do nich sloučí, tak abyhom měli pouze 10 barev.
