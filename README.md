@@ -25,7 +25,7 @@ calculateColors(image)
         colors(i).color     % Hodnota barvy
         colors(i).amount    % Počet výskytů
         ```
-***
+___
 
 ```matlab
 reduceColors(image, colors, maxColors)
