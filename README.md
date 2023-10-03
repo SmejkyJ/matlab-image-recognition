@@ -1,5 +1,6 @@
 
 # Rozpoznání obrázku v Matlabu
+#### Verze Matlabu: 2023b
 
 ### Bonusová úloha č. 1
 - [x] bod za splnění
