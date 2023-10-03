@@ -10,7 +10,7 @@ readImage(filePath)
 ```
 - filePath - cesta k černo-bílému obrázku
 - vrací dvourozměrnou matici s pixely obrázku
-<br>
+---
 ```
 calculateColors(image)
 ```
