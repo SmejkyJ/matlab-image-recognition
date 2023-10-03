@@ -5,13 +5,12 @@ Bonusová úloha č. 1 (2 body)
 
 
 ## Funkce
-```
+```matlab
 readImage(filePath)
 ```
 - filePath - cesta k černo-bílému obrázku
 - vrací dvourozměrnou matici s pixely obrázku
----
-```
+```matlab
 calculateColors(image)
 ```
 - image - dvourozměrná matice s obrázkem
@@ -20,13 +19,15 @@ calculateColors(image)
     - amount - počet výskytů v matici
 
         Příklad:
-        ```
+        ```matlab
         colors = calculateColors(image);
         ...
         colors(i).color     % Hodnota barvy
         colors(i).amount    % Počet výskytů
         ```
-```
+***
+
+```matlab
 reduceColors(image, colors, maxColors)
 ```
 - image - dvourozměrná matice s obrázkem
@@ -34,6 +35,6 @@ reduceColors(image, colors, maxColors)
 - maxColor - počet barev na který chceme barvy redukovat
 - vrací dvourozměrnou matici s pixely obrázku, které mají max. maxColor barev
 
-```
+```matlab
 deleteShadow(image, colors, maxColors)
 ```
