@@ -1,5 +1,5 @@
 
-# Rozpoznání obráku v Matlabu
+# Rozpoznání obrázku v Matlabu
 
 Bonusová úloha č. 1 (2 body)
 
@@ -18,6 +18,7 @@ calculateColors(image)
 - vrací jednorozměrnou matici struktur
     - color - hodnota barvy
     - amount - počet výskytů v matici
+
         Příklad:
         ```
         colors = calculateColors(image);
