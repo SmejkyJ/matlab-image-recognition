@@ -36,5 +36,6 @@ deleteShadow(image, deleteConst)
 ```
 - image - dvourozměrná matice s obrázkem
 - deleteConst - počet pixelů, ktérý bude od tělese odstraněn kolem celého obvodu
-    Jelikož se při redukování barev většinou prokopíruje kousek stínu, tak ho odstraníme pomocí zmenšení tělese kolem celého obvodu.
-    U obrázků 64x64 se prokázala efektivní hodnota 3.
+
+Jelikož se při redukování barev většinou prokopíruje kousek stínu, tak ho odstraníme pomocí zmenšení tělese kolem celého obvodu.
+U obrázků 64x64 se prokázala efektivní hodnota 3.
