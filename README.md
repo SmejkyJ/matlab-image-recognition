@@ -18,7 +18,7 @@ calculateColors(image)
 - vrací jednorozměrnou matici struktur
     - color - hodnota barvy
     - amount - počet výskytů v matici
-    - &#x2605; Star
+    - &#155; Star
         ```matlab
         colors = calculateColors(image);
         ...
