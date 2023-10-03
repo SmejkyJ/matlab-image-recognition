@@ -35,8 +35,27 @@ ___
 deleteShadow(image, deleteConst)
 ```
 - image - dvourozměrná matice s obrázkem
-- deleteConst - počet pixelů, ktérý bude od tělese odstraněn kolem celého obvodu
+- deleteConst - konstanta s počtem pixelů, ktérý bude od tělese odstraněn kolem celého obvodu
+- vrací dvourozměrnou matici s pixely obrázku, který má 2 barvy (bílou a černou)
 
-*Jelikož se při redukování barev většinou prokopíruje kousek stínu, tak ho odstraníme pomocí zmenšení tělese kolem celého obvodu.
-U obrázků 64x64 se prokázala efektivní hodnota 3.*
+*Jelikož se při redukování barev většinou prokopíruje kousek stínu, tak ho odstraníme pomocí zmenšení tělesa o deleteConst kolem celého obvodu.
+U obrázků 64x64 se prokázala efektivní hodnota 2.*
+___
+```matlab
+findCenter(image)
+```
+- image - dvourozměrná matice s obrázkem
+- vrací strukturu s informací o středu
+    - X - souřadnice středu x
+    - Y - souřadnice středu y
+    - r - poloměr kružnice (pokud to je kružnice)
+___
+```matlab
+analyze(image, center, clearence, sections)
+```
+- image - dvourozměrná matice s obrázkem
+- center - struktura s informací o středu
+- clearence - konstanta s tolerancí *(pro 64x64 obrázky se osvědčila hodnota 2)*
+- sections - konstanta s počtem kontrol *(čím víc, tím líp - pro 64x64 obrázky použita hodnota 120)*
+- vrací char buď k pro kružnici, nebo c pro čtverec
 ___
