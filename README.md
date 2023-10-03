@@ -14,7 +14,6 @@ Poté se všechny barvy dají na černou až na barvu tělesa, která se dá na 
 
 ![Příklad](https://raw.githubusercontent.com/SmejkyJ/matlab-image-recognition/main/example_1.png)
 
-___
 ## Funkce
 ```matlab
 readImage(filePath)
