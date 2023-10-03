@@ -10,6 +10,7 @@ readImage(filePath)
 ```
 - filePath - cesta k černo-bílému obrázku
 - vrací dvourozměrnou matici s pixely obrázku
+___
 ```matlab
 calculateColors(image)
 ```
@@ -34,7 +35,7 @@ reduceColors(image, colors, maxColors)
 - color - matice s hodnoty a počtem výskytů všech barev
 - maxColor - počet barev na který chceme barvy redukovat
 - vrací dvourozměrnou matici s pixely obrázku, které mají max. maxColor barev
-
+___
 ```matlab
-deleteShadow(image, colors, maxColors)
+deleteShadow(image, deleteConst)
 ```
