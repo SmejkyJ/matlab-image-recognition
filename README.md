@@ -1,7 +1,9 @@
 
 # Rozpoznání obrázku v Matlabu
 
-Bonusová úloha č. 1 (2 body)
+### Bonusová úloha č. 1
+- [x] 1. bod za splnění
+- [x] 1. bod za výhru
 
 ## Popis
 *Program nejdříve spočítá všechny barvy v obrázku. Následně vezme ty nejčastější a podobné (méně časté) barvy do nich sloučí, tak abyhom měli pouze 10 barev.
