@@ -20,6 +20,7 @@ calculateColors(image)
     - amount - počet výskytů v matici
 ---
 Příklad:
+
         ```matlab
         colors = calculateColors(image);
         ...
