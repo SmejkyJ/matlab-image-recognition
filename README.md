@@ -11,6 +11,8 @@ Poté se všechny barvy dají na černou až na barvu tělesa, která se dá na 
 *Tento způsob je velmi efektivní, zejména u větších těles. U menších by bylo vhodné zavést výpočet pro tloušťku kontrolního prstence, která je prozatím konstantí.*
 
 *Dosažená úspěšnost: 100%*
+![Příklad](https://raw.githubusercontent.com/SmejkyJ/matlab-image-recognition/main/example.png)
+
 ___
 ## Funkce
 ```matlab
