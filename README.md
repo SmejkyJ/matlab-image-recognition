@@ -53,6 +53,17 @@ deleteShadow(image, deleteConst)
 U obrázků 64x64 se prokázala efektivní hodnota 2.*
 ___
 ```matlab
+isEdge(image, Y, X)
+```
+- image - dvourozměrná matice s obrázkem
+- Y - souřadnice Y
+- X - souřadnice X
+- vrací **true**, pokud pixel na souřadnicích X a Y sousedí s černým pixelem.
+
+*Jelikož se při redukování barev většinou prokopíruje kousek stínu, tak ho odstraníme pomocí zmenšení tělesa o deleteConst kolem celého obvodu.
+U obrázků 64x64 se prokázala efektivní hodnota 2.*
+___
+```matlab
 findCenter(image)
 ```
 - image - dvourozměrná matice s obrázkem
