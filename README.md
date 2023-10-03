@@ -6,12 +6,12 @@ Bonusová úloha č. 1 (2 body)
 ## Popis
 *Program nejdříve spočítá všechny barvy v obrázku. Následně vezme ty nejčastější a podobné (méně časté) barvy do nich sloučí, tak abyhom měli pouze 10 barev.
 Ty následně seřadíme od nejvíce časté po nejméně. Víme že nejčastější a druhá nejčastější barva jsou barvy tělesa a pozadí. Dále také počítáme s tím, že pozadí je vždy světlejší než tvar.
-Poté se všechny barvy dají na černou až na barvu tělesa, která se dá na bílou. Bohužel zde bude bílý i kus stínu, protože v nějaké části má stejnou, nebo alespoň dostatečně podobnou barvu jako tvar. Tento problém řeším funkcí která všechny bílé pixely, které sousedí s černým pixelem přeměním na černé. Toto provedu 3x po sobě. Takto se efektivně zbavím nepřesnostem jako je například stín. Teď akorát přeměním všechny bílé pixely které nesousedí s černým pixelem na černé a tím docílím dokonalého obvodu tvaru. Budu předpokládat že daný tvar je kruh. Tedy najdu bíle pixely nejvíc vlevo vpravo nahoře a dole, ze kterých si vypočítám souřadnice středu a poloměr kruhu. Nyní si přes sinus a cosinus vypočítám ideální kružnici, které dám tloušťku a tak z ní udělám prstenec (k tomu slouží proměnná analyzeClearence). Pokud se v tomto prstenci (v obrázku je znázorněn šede) nachází 95% pixelů tvaru, znamená to, že je tvar kruh.*
+Poté se všechny barvy dají na černou až na barvu tělesa, která se dá na bílou. Bohužel zde bude bílý i kus stínu, protože v nějaké části má stejnou, nebo alespoň dostatečně podobnou barvu jako tvar. Tento problém řeším funkcí která všechny bílé pixely, které sousedí s černým pixelem přeměním na černé. Toto provedu 2x-3x po sobě. Takto se efektivně zbavím nepřesnostem jako je například stín. Teď akorát přeměním všechny bílé pixely které nesousedí s černým pixelem na černé a tím docílím dokonalého obvodu tvaru. Budu předpokládat že daný tvar je kruh. Tedy najdu bíle pixely nejvíc vlevo vpravo nahoře a dole, ze kterých si vypočítám souřadnice středu a poloměr kruhu. Nyní si přes sinus a cosinus vypočítám ideální kružnici, které dám tloušťku a tak z ní udělám prstenec (k tomu slouží proměnná analyzeClearence). Pokud se v tomto prstenci (v obrázku je znázorněn šede) nachází 95% pixelů tvaru, znamená to, že je tvar kruh.*
 
 *Tento způsob je velmi efektivní, zejména u větších těles. U menších by bylo vhodné zavést výpočet pro tloušťku kontrolního prstence, která je prozatím konstantí.*
 
 *Dosažená úspěšnost: 100%*
-
+___
 ## Funkce
 ```matlab
 readImage(filePath)
@@ -63,7 +63,7 @@ analyze(image, center, clearence, sections)
 ```
 - image - dvourozměrná matice s obrázkem
 - center - struktura s informací o středu
-- clearence - konstanta s tolerancí *(pro 64x64 obrázky se osvědčila hodnota 2)*
+- clearence - konstanta s tolerancí *(pro 64x64 obrázky se osvědčila hodnota 2 až 3)*
 - sections - konstanta s počtem kontrol *(čím víc, tím líp - pro 64x64 obrázky použita hodnota 120)*
 - vrací char buď **k** pro kružnici, nebo **c** pro čtverec
 ___
